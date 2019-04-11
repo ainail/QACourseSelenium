@@ -13,7 +13,7 @@ namespace QACourseSelenium
     public class TestClass
     {
         private ChromeDriver chromeDriver;
-        
+
         [OneTimeSetUp]
         public void SetUp()
         {
@@ -29,6 +29,8 @@ namespace QACourseSelenium
         [Test]
         public void ChromeDriverTest()
         {
+
+            //коменты-коменты-коменты-коменты
             chromeDriver.Navigate().GoToUrl("http://www.google.com");
             chromeDriver.FindElement(By.ClassName("gLFyf")).SendKeys("google");
             Thread.Sleep(500);
